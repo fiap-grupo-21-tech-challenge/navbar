@@ -1,0 +1,1 @@
+declare module '@grupo21/shared-react';

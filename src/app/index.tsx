@@ -2,11 +2,11 @@ import './styles.css'
 import Logo from "./components/logo";
 import { BiHome, BiLogOut, BiTrendingUp } from "react-icons/bi";
 import { navigateToUrl } from "single-spa";
-import { useAuthUser, auth } from '@grupo21/shared-react';
+import { hooks, auth } from '@grupo21/shared-react';
 
 export default function Root(props) {
+  const { useAuthUser } = hooks;
   const user = useAuthUser()
-
   const { logoutUser } = auth;
 
   const tabs = [
